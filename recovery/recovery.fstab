@@ -1,0 +1,11 @@
+/dev/block/system       /system         ext4    ro                                      wait
+/dev/block/cache        /cache          ext4    noatime,nosuid,nodev,errors=panic       wait
+/dev/block/data         /data           ext4    noatime,nosuid,nodev,errors=panic       wait
+
+#/devices/platform/AMLOGIC_CARD/card_host/memorycard0   /storage/sdcard1        auto    defaults        voldmanaged=sdcard1:auto
+#/devices/lm                                            /storage/usbdisk0       auto    defaults        voldmanaged=usbdisk0:auto
+
+/dev/block/boot         /boot           emmc            defaults                recoveryonly
+/dev/block/recovery     /recovery       emmc            defaults                recoveryonly
+/dev/block/mmcblk0p1    /external_sd    auto            defaults                recoveryonly
+/dev/block/sda1         /usbdisk        auto            defaults                recoveryonly
